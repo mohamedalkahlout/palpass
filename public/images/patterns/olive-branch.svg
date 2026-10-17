@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 48" role="img" aria-label="عرق الزيتون / Olive branch">
+  <style>
+    .ink { fill: var(--brand-900, #064e3b); }
+    .leaf { fill: var(--brand-900, #064e3b); }
+    .stem { fill: none; stroke: var(--brand-900, #064e3b); stroke-width: 2; }
+    @media (prefers-color-scheme: dark) {
+      .ink, .leaf { fill: #34d399; }
+      .stem { stroke: #34d399; }
+    }
+  </style>
+  <path class="stem" d="M4 40 C 44 34, 92 26, 156 12"/>
+  <g class="leaf">
+    <ellipse cx="34" cy="30" rx="11" ry="4.2" transform="rotate(-18 34 30)"/>
+    <ellipse cx="52" cy="40" rx="11" ry="4.2" transform="rotate(14 52 40)"/>
+    <ellipse cx="74" cy="24" rx="11" ry="4.2" transform="rotate(-16 74 24)"/>
+    <ellipse cx="92" cy="34" rx="11" ry="4.2" transform="rotate(14 92 34)"/>
+    <ellipse cx="114" cy="20" rx="10" ry="4" transform="rotate(-16 114 20)"/>
+    <ellipse cx="132" cy="28" rx="10" ry="4" transform="rotate(14 132 28)"/>
+    <ellipse cx="150" cy="16" rx="9" ry="3.6" transform="rotate(-16 150 16)"/>
+  </g>
+  <circle class="ink" cx="10" cy="41" r="3"/>
+</svg>

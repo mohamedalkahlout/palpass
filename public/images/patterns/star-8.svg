@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="النجمة الثمانية / Eight-pointed star">
+  <style>
+    .ink { fill: var(--brand-900, #064e3b); }
+    .accent { fill: var(--gold-700, #b45309); }
+    @media (prefers-color-scheme: dark) {
+      .ink { fill: #34d399; }
+      .accent { fill: #f59e0b; }
+    }
+  </style>
+  <g class="ink" transform="translate(32 32)">
+    <rect x="-16" y="-16" width="32" height="32"/>
+    <rect x="-16" y="-16" width="32" height="32" transform="rotate(45)"/>
+    <circle r="5" class="accent"/>
+  </g>
+</svg>

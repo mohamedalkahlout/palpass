@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="نقش تطريز فلسطيني — النجمة الثمانية / Palestinian tatreez motif — eight-pointed star">
+  <style>
+    .ink { fill: var(--brand-900, #064e3b); }
+    .accent { fill: var(--gold-700, #b45309); }
+    @media (prefers-color-scheme: dark) {
+      .ink { fill: #34d399; }
+      .accent { fill: #f59e0b; }
+    }
+  </style>
+  <g class="ink">
+    <g transform="translate(40 40)">
+      <rect x="-12" y="-12" width="24" height="24"/>
+      <rect x="-12" y="-12" width="24" height="24" transform="rotate(45)"/>
+      <circle r="4.5" class="accent"/>
+    </g>
+    <g transform="translate(0 0)"><rect x="-6" y="-6" width="12" height="12" transform="rotate(45)"/></g>
+    <g transform="translate(80 0)"><rect x="-6" y="-6" width="12" height="12" transform="rotate(45)"/></g>
+    <g transform="translate(0 80)"><rect x="-6" y="-6" width="12" height="12" transform="rotate(45)"/></g>
+    <g transform="translate(80 80)"><rect x="-6" y="-6" width="12" height="12" transform="rotate(45)"/></g>
+    <g transform="translate(40 0)"><rect x="-4" y="-4" width="8" height="8" transform="rotate(45)"/></g>
+    <g transform="translate(0 40)"><rect x="-4" y="-4" width="8" height="8" transform="rotate(45)"/></g>
+    <g transform="translate(80 40)"><rect x="-4" y="-4" width="8" height="8" transform="rotate(45)"/></g>
+    <g transform="translate(40 80)"><rect x="-4" y="-4" width="8" height="8" transform="rotate(45)"/></g>
+  </g>
+</svg>

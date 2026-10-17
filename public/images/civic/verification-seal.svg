@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="ختم التحقق الرسمي / Official verification seal">
+  <style>
+    .ring { fill: none; stroke: var(--brand-900, #064e3b); stroke-width: 3; }
+    .ring-thin { fill: none; stroke: var(--brand-900, #064e3b); stroke-width: 1.5; stroke-dasharray: 3 5; }
+    .ink { fill: var(--brand-900, #064e3b); }
+    .accent { fill: none; stroke: var(--gold-700, #b45309); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+    @media (prefers-color-scheme: dark) {
+      .ring, .ring-thin { stroke: #34d399; }
+      .ink { fill: #34d399; }
+      .accent { stroke: #f59e0b; }
+    }
+  </style>
+  <circle class="ring" cx="50" cy="50" r="45"/>
+  <circle class="ring-thin" cx="50" cy="50" r="38"/>
+  <g class="ink" transform="translate(50 38)">
+    <rect x="-11" y="-11" width="22" height="22"/>
+    <rect x="-11" y="-11" width="22" height="22" transform="rotate(45)"/>
+    <circle r="3.6" fill="#f59e0b"/>
+  </g>
+  <path class="accent" d="M38 58 L46 66 L64 46"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 96" role="img" aria-label="49'1 /HD) AD37JF">
+  <style>
+    .ink { fill: var(--brand-900, #064e3b); }
+    .line { fill: none; stroke: var(--brand-900, #064e3b); }
+    @media (prefers-color-scheme: dark) {
+      .ink { fill: #34d399; }
+      .line { stroke: #34d399; }
+    }
+  </style>
+  <path class="line" d="M40 3 L74 16 V46 C74 68 40 93 40 93 C40 93 6 68 6 46 V16 Z" stroke-width="2"/>
+  <path class="ink" d="M40 24c-8 0-16 6-22 12 6-1 12 2 22 2s16-3 22-2c-6-6-14-12-22-12z"/>
+  <path class="ink" d="M18 38c-8 2-14 8-16 14 8-2 14-1 20 3 2-6 2-12-4-17z"/>
+  <path class="ink" d="M62 38c8 2 14 8 16 14-8-2-14-1-20 3-2-6-2-12 4-17z"/>
+  <circle class="ink" cx="40" cy="30" r="3.2"/>
+  <path class="ink" d="M44 31l6 1.2-6 1.6z"/>
+  <path class="ink" d="M40 42c-6 8-8 16-8 24h16c0-8-2-16-8-24z"/>
+  <path class="ink" d="M28 78h24l-4 8H32z"/>
+</svg>

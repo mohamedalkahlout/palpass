@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="PALPASS">
+  <style>
+    .plate { fill: var(--brand-900, #064e3b); }
+    .star { fill: var(--surface, #fafaf9); }
+    .seal { fill: var(--gold-700, #b45309); }
+    @media (prefers-color-scheme: dark) {
+      .plate { fill: #34d399; }
+      .star { fill: #0c0f0e; }
+      .seal { fill: #f59e0b; }
+    }
+  </style>
+  <rect class="plate" width="64" height="64" rx="8"/>
+  <g transform="translate(32 32)">
+    <rect class="star" x="-13" y="-13" width="26" height="26"/>
+    <rect class="star" x="-13" y="-13" width="26" height="26" transform="rotate(45)"/>
+    <circle class="seal" r="4.5"/>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 72" role="img" aria-label="PALPASS  (H'() AD37JF 'D1BEJ)">
+  <style>
+    .plate { fill: var(--brand-900, #064e3b); }
+    .star { fill: var(--surface, #fafaf9); }
+    .seal { fill: var(--gold-700, #b45309); }
+    .word { fill: var(--text, #1c1917); }
+    .sub { fill: var(--text-muted, #57534e); }
+    @media (prefers-color-scheme: dark) {
+      .plate { fill: #34d399; }
+      .star { fill: #0c0f0e; }
+      .seal { fill: #f59e0b; }
+      .word { fill: #ecefed; }
+      .sub { fill: #9aa5a0; }
+    }
+  </style>
+  <g transform="translate(4 4)">
+    <rect class="plate" width="64" height="64" rx="8"/>
+    <g transform="translate(32 32)">
+      <rect class="star" x="-13" y="-13" width="26" height="26"/>
+      <rect class="star" x="-13" y="-13" width="26" height="26" transform="rotate(45)"/>
+      <circle class="seal" r="4.5"/>
+    </g>
+  </g>
+  <text class="word" x="84" y="32" font-family="IBM Plex Sans Arabic, Segoe UI, Tahoma, sans-serif" font-size="22" font-weight="700">PALPASS</text>
+  <text class="sub" x="84" y="54" font-family="IBM Plex Sans Arabic, Segoe UI, Tahoma, sans-serif" font-size="14" font-weight="600">(H'() AD37JF 'D1BEJ)</text>
+</svg>

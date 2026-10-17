@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="نقل عام / Public transport">
+  <style>
+    .line { fill: none; stroke: var(--brand-900, #064e3b); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    @media (prefers-color-scheme: dark) { .line { stroke: #34d399; } }
+  </style>
+  <rect class="line" x="4" y="4" width="16" height="13" rx="2"/>
+  <path class="line" d="M4 11h16M8 4v7M16 4v7"/>
+  <circle class="line" cx="8" cy="20" r="1.4"/>
+  <circle class="line" cx="16" cy="20" r="1.4"/>
+</svg>

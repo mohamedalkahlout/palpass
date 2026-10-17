@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 96" role="img" aria-label="شارة مدنية رسمية / Official civic badge">
+  <style>
+    .shield { fill: none; stroke: var(--brand-900, #064e3b); stroke-width: 3; }
+    .ink { fill: var(--brand-900, #064e3b); }
+    .accent { fill: var(--gold-700, #b45309); }
+    @media (prefers-color-scheme: dark) {
+      .shield { stroke: #34d399; }
+      .ink { fill: #34d399; }
+      .accent { fill: #f59e0b; }
+    }
+  </style>
+  <path class="shield" d="M40 3 L74 16 V46 C74 68 40 93 40 93 C40 93 6 68 6 46 V16 Z"/>
+  <g class="ink" transform="translate(40 46)">
+    <rect x="-13" y="-13" width="26" height="26"/>
+    <rect x="-13" y="-13" width="26" height="26" transform="rotate(45)"/>
+    <circle r="4" class="accent"/>
+  </g>
+</svg>

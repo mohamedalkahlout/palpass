@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="مرفق حكومي / Government facility">
+  <style>
+    .line { fill: none; stroke: var(--brand-900, #064e3b); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    @media (prefers-color-scheme: dark) { .line { stroke: #34d399; } }
+  </style>
+  <path class="line" d="M3 9l9-5 9 5"/>
+  <path class="line" d="M5 9v9M9 9v9M15 9v9M19 9v9"/>
+  <path class="line" d="M3 20h18M3 18h18"/>
+</svg>

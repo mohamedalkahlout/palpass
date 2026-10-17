@@ -1,0 +1,31 @@
+# PALPASS — System Architecture & Coding Standards
+
+## 1. Project Identity & Stack
+- Name: PALPASS (Palestine Pass) - National Digital Identity & e-Government Platform.
+- Core Anchor: Citizen's 9-digit National ID (NID) is the primary civic identifier.
+- Framework: Next.js 16.1.6 (App Router with Turbopack), React 19.
+- Styling: Tailwind CSS v4, Framer Motion, shadcn/ui (Radix UI).
+- State & Data: Zustand, TanStack Query.
+- Backend / Database: Supabase (Postgres with Row Level Security, Auth via GoTrue, Storage, Realtime).
+- i18n: next-intl (Arabic RTL as primary with Cairo font, English LTR as secondary).
+- Validation: Zod v4.
+- Primary Currency: New Israeli Shekel (ILS).
+
+## 2. Strict Project Structure Rules
+- ALL application code belongs exclusively under `src/` (`src/app`, `src/components`, `src/lib`, `src/hooks`, `src/i18n`, `src/messages`, `src/data`).
+- NEVER create or execute routes from a root `app/` folder.
+- NEVER introduce or use Prisma (this project uses Supabase Postgres directly with RLS policies).
+- Alias: `@/*` resolves strictly to `./src/*`.
+- TypeScript is pinned to `5.9.2`. Do not attempt to upgrade TypeScript to v7.x as it breaks Next.js 16 Turbopack.
+
+## 3. Encoding & File Safety
+- All JSON and config files (especially `tsconfig.json`, `jsconfig.json`, `components.json`, `package.json`) MUST be written in pure UTF-8 without BOM (`\uFEFF`).
+- Never introduce escaped backticks (`\``) inside template strings in JSX/JS files.
+
+## 4. Backend & Security Patterns
+- Server Mutations: Centralized in Server Actions (`src/app/actions.js`). Always maintain `"use server"` where required.
+- Data Queries: Centralized in `src/lib/supabase/service.js`.
+- Security: Respect Postgres RLS on all 12 tables. Never bypass RLS in client-side calls.
+- Concurrency: Financial balance updates (wallet payments, donations, fines) must always enforce optimistic concurrency checks (`.eq("balance", current_balance)`).
+- Admin Verification: Ensure authorization reads the authoritative role from `profiles.role` rather than relying solely on `user_metadata`.
+- Credentials: Never hardcode SMTP or API keys; always reference `process.env`.
